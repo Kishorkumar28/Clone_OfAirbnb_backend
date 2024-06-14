@@ -126,7 +126,8 @@ app.post('/cancelbooking', async (req,res)=>{
     res.send("Cancellation error")
   }
 })
-
+const PORT = process.env.PORT || 3000;
+const HOSTNAME=process.env.HOSTNAME
 app.listen(PORT,HOSTNAME, () => {
   console.log(`Server is running on port ${PORT}`);
 });
