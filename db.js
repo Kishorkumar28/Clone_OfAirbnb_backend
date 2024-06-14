@@ -6,7 +6,7 @@ const connectDb = async ()=>{
 
     if(mongoose.connection.readyState===1) return;
     await mongoose.connect(dbURI);
-    console.log(mongoose.connection.readyState)
+    // console.log(mongoose.connection.readyState)
 }
 
 export default connectDb;
